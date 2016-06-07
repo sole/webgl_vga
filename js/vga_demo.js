@@ -330,7 +330,7 @@ function init() {
 		var t = Date.now(),
 			delta = Math.PI * 2 / color_cubes.length;
 
-		/*if(auto_update) {
+		if(auto_update) {
 			blue += blue_change;
 
 			if(blue > 1.0) {
@@ -370,7 +370,7 @@ function init() {
 			var mat = color_cube.material.color;
 			if(i >= 16)
 				mat.b = blue;
-		}*/
+		}
 
 		renderer.render(scene, camera);
 
