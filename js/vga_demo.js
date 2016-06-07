@@ -23,8 +23,8 @@ function init() {
 
 	//setupAxis(scene);
 	figure = setupFigure();
-	/*circles = setupCircles();
-	color_cubes = setupColorCubes();
+	circles = setupCircles();
+	/*color_cubes = setupColorCubes();
 	moire_blocks = setupMoireBlocks();
 	setupText();
 	setupKeyboard();*/
@@ -130,10 +130,10 @@ function init() {
 						
 			for(var j = 0; j < num_segments+1; j++) {
 				var angle = Math.PI * 2 * (j / num_segments);
-				var v = new THREE.Vertex();
-				v.position.x = radius * Math.sin(angle);
-				v.position.y = radius * Math.cos(angle);
-				v.position.z = 0;
+				var v = new THREE.Vector3();
+				v.x = radius * Math.sin(angle);
+				v.y = radius * Math.cos(angle);
+				v.z = 0;
 
 				geometry.vertices.push(v);
 			}
