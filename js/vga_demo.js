@@ -24,10 +24,10 @@ function init() {
 	//setupAxis(scene);
 	figure = setupFigure();
 	circles = setupCircles();
-	/*color_cubes = setupColorCubes();
+	color_cubes = setupColorCubes();
 	moire_blocks = setupMoireBlocks();
 	setupText();
-	setupKeyboard();*/
+	setupKeyboard();
 
 	renderer = new THREE.WebGLRenderer({antialias: true});
 	renderer.setSize(canvas_w, canvas_h);
