@@ -1,0 +1,49 @@
+@font-face {
+	font-family: dos;
+	src: url('dosfont.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+	background: #000;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #00ff00;
+}
+
+a:visited {
+	color: #ff5;
+}
+
+p { margin-top: 0; }
+
+
+#text {
+	position: absolute;
+	top: 70%;
+	left: 1%;
+	padding-bottom: 1%;
+	width: 95%;
+	z-index: 100;
+	color: #ccc;
+	font-family: dos, courier, mono;
+	word-wrap: break-word;
+}
+	#text strong {
+		font-weight: normal;
+		color: #fff;
+	}
+
+	#text div {
+		width: 25%;
+		padding-right: 2%;
+		float: left;
+	}
+
+	#text #test p { margin: 0; }
+
