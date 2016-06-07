@@ -30,6 +30,7 @@ function init() {
 	setupKeyboard();
 
 	renderer = new THREE.WebGLRenderer({antialias: true});
+	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(canvas_w, canvas_h);
 	renderer.setClearColor(0x000000, 1);
 
